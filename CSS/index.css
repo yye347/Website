@@ -3,18 +3,47 @@
     font-family: system-ui;
 }
 
-#header {
-    display: grid;
-    grid-template-columns: 5% 15% 50%;
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 1rem;
+    justify-content: space-around;
 }
 
-#logo-text > h1 {
+#logo-text h1 {
     margin: 0;
+    width: 15rem;
 }
 
-#navbar > ul {
+nav {
+    float: right;
+}
+
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+#navbar li {
+    display: inline;
+    margin: 3rem;
+}
+
+#navbar a {
+    display: inline;
+    text-align: center;
+    padding: 0.1rem 0.1rem;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#logo-and-logo-text {
+    display: flex;
+    align-items: center;
 }
