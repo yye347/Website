@@ -7,15 +7,19 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
 }
 
 #logo-text h1 {
     margin: 0;
-    width: 15rem;
+    width: 10rem;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
 }
 
 nav {
-    margin-left: 10rem;
+    margin-left: 17.2rem;
 }
 
 #navbar ul {
@@ -48,4 +52,24 @@ nav {
 
 body {
     margin-inline: 10rem;
+}
+
+[aria-labelledby="problem"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#problem-content {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+#problem-content p {
+    margin-top: 0;
+}
+
+.image {
+    margin-left: 25rem;
 }
