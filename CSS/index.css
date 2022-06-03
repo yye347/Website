@@ -7,8 +7,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
-    justify-content: space-around;
 }
 
 #logo-text h1 {
@@ -17,7 +15,7 @@ header {
 }
 
 nav {
-    float: right;
+    margin-left: 10rem;
 }
 
 #navbar ul {
@@ -46,4 +44,8 @@ nav {
 #logo-and-logo-text {
     display: flex;
     align-items: center;
+}
+
+body {
+    margin-inline: 10rem;
 }
