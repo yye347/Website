@@ -1,75 +1,85 @@
 * {
-    box-sizing: content-box;
-    font-family: system-ui;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-}
-
-#logo-text h1 {
-    margin: 0;
-    width: 10rem;
-    line-height: 1.5rem;
-    font-size: 1.5rem;
-}
-
-nav {
-    margin-left: 17.2rem;
-}
-
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#navbar li {
-    display: inline;
-    margin: 3rem;
-}
-
-#navbar a {
-    display: inline;
-    text-align: center;
-    padding: 0.1rem 0.1rem;
-    text-decoration: none;
-    color: black;
-}
-
-#navbar a:hover {
-    text-decoration: underline;
-}
-
-#logo-and-logo-text {
-    display: flex;
-    align-items: center;
+  box-sizing: content-box;
+  font-family: system-ui;
+  color: white;
 }
 
 body {
-    margin-inline: 10rem;
+  padding-inline: 40rem;
+  background-image: linear-gradient(rgba(0 0 0 / 40%),rgba(0 0 0 / 40%)), url(/Images/Original/Linear1-Grain1.png)
+}
+
+header {
+  display: grid;
+  grid-template-columns: 64px 15rem auto;
+  align-items: center;
+}
+
+#logo-text {
+  line-height: 2rem;
+}
+
+#nav-list {
+  display: flex;
+  gap: 5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+nav a {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+nav li:last-child a {
+  padding-right: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#current {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+#current a {
+  color: black;
 }
 
 [aria-labelledby="problem"] {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 0.5fr;
+  grid-template-rows: 0.4fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 24px;
+  align-items: center;
 }
 
-#problem-content {
-    display: flex;
-    flex-direction: column;
-    width: 40rem;
+#problem-header {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#problem-paragraph {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#problem-img {
+  grid-area: 1 / 2 / 3 / 3;
+}
+#problem-img img {
+    margin-inline: auto;
+    display: block;  
 }
 
-#problem-content p {
+#problem-paragraph p {
     margin-top: 0;
 }
-
-.image {
-    margin-left: 25rem;
-}
+#problem-header h2 {
+    margin-bottom: 0;
+  }
