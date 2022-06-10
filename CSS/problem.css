@@ -1,0 +1,68 @@
+* {
+    box-sizing: content-box;
+    font-family: "Garet-Book";
+    color: white;
+  }
+  
+  @font-face {
+    font-family: Garet-Book;
+    src: url(/Fonts/Garet-Book.ttf);
+  }
+  
+  @font-face {
+    font-family: Garet-Bold;
+    src: url(/Fonts/Garet-Heavy.ttf);
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
+      url(/Images/Original/Linear1-Grain1.png);
+    background-size: cover;
+    margin-inline: 7rem;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 64px 16rem auto;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #logo-text {
+    line-height: 2rem;
+  }
+  
+  #logo-text h1 {
+    font-family: "Garet-Bold";
+    font-size: 1.8rem;
+  }
+  
+  #nav-list {
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+  }
+  
+  nav li:last-child a {
+    padding-right: 0;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #current a {
+    font-weight: bold;
+  }
