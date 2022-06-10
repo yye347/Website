@@ -8,7 +8,6 @@
   font-family: Garet-Book;
   src: url(/Fonts/Garet-Book.ttf);
 }
-
 @font-face {
   font-family: Garet-Bold;
   src: url(/Fonts/Garet-Heavy.ttf);
@@ -67,6 +66,7 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* Body Content*/
 [aria-labelledby="problem"] {
   display: grid;
   grid-template-columns: 1fr;
