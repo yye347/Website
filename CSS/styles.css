@@ -23,13 +23,18 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 64px 15rem auto;
+  grid-template-columns: 64px 16rem auto;
   align-items: center;
   margin-bottom: 1rem;
 }
 
 #logo-text {
   line-height: 2rem;
+}
+
+#logo-text h1 {
+  font-family: "Garet-Bold";
+  font-size: 1.8rem;
 }
 
 #nav-list {
