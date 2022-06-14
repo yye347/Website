@@ -1,67 +1,179 @@
 * {
-    box-sizing: content-box;
-    font-family: "Garet-Book";
-    color: white;
-  }
-
-  @font-face {
-    font-family: Garet-Book;
-    src: url(/Fonts/Garet-Book.ttf);
-  }
-  @font-face {
-    font-family: Garet-Bold;
-    src: url(/Fonts/Garet-Heavy.ttf);
-  }
-
-/* Header Content */
-
+  box-sizing: content-box;
+  font-family: "Garet-Book";
+  color: white;
+}
+@font-face {
+  font-family: Garet-Book;
+  src: url(/Fonts/Garet-Book.ttf);
+}
+@font-face {
+  font-family: Garet-Bold;
+  src: url(/Fonts/Garet-Heavy.ttf);
+}
 body {
-    background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
-      url(/Images/Original/Linear1-Grain1.png);
-    background-size: cover;
-    margin-inline: 7rem;
-    background-attachment:fixed;
-    overscroll-behavior: none;
-  }
-  header {
-    display: grid;
-    grid-template-columns: 64px 16rem auto;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  #logo-text {
-    line-height: 2rem;
-  }
-  #logo-text h1 {
-    font-family: "Garet-Bold";
-    font-size: 1.8rem;
-  }
-  #nav-list {
-    display: flex;
-    gap: 3rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    float: right;
-  }
-  
-  nav a {
-    display: block;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 1rem 1rem;
-    color: inherit;
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
-  }
-  nav li:last-child a {
-    padding-right: 0;
-  }
-  nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 1);
-  }
-  #current a {
-    font-family: "Garet-Bold";
-  }
-  
+  background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
+    url(/Images/Original/Linear1-Grain1.png);
+  background-size: cover;
+  margin-inline: 7rem;
+  background-attachment: fixed;
+  overscroll-behavior: none;
+}
+
+/* Header Styling */
+
+header {
+  display: grid;
+  grid-template-columns: 64px 16rem auto;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#logo-text {
+  line-height: 2rem;
+}
+#logo-text h1 {
+  font-family: "Garet-Bold";
+  font-size: 1.8rem;
+}
+#nav-list {
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+nav a {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+nav li:last-child a {
+  padding-right: 0;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+#current a {
+  font-family: "Garet-Bold";
+}
+
+/* Main Styling */
+
+#page-title {
+  display: flex;
+  justify-content: center;
+  margin-block: 3rem;
+}
+#page-title h1 {
+  font-family: "Garet-Bold";
+}
+
+[aria-labelledby="youre-the-solution"] {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+#youre-header {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#youre-header h2 {
+  margin-bottom: 0;
+  font-family: "Garet-Bold";
+}
+#youre-paragraph {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#youre-paragraph p {
+  margin-top: 0;
+  font-size: large;
+}
+#youre-img {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+[aria-labelledby="we-need-your-help"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+blockquote {
+  margin: 0;
+}
+#we-need-your-help {
+  font-family: "Garet-Bold";
+}
+#quote-text {
+  font-size: 1.5rem;
+  margin-block: 0;
+}
+#quote-text p {
+  margin: 0;
+}
+
+#steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  grid-row-gap: 1rem;
+  margin-bottom: 5rem;
+}
+#steps h3 {
+  font-family: "Garet-Bold";
+}
+#steps p {
+  font-size: large;
+}
+
+#spread-the-word {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#get-together {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#gift-your-time {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#be-the-change {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#be-the-change h3,
+h4 {
+  text-align: center;
+}
+
+#be-the-change a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+#social-icons a {
+  margin: 1rem;
+}
+
+#author {
+  margin-left: auto;
+  align-items: center;
+}

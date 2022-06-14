@@ -11,17 +11,17 @@
   font-family: Garet-Bold;
   src: url(/Fonts/Garet-Heavy.ttf);
 }
-
-/* Header Content */
-
 body {
   background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
     url(/Images/Original/Linear1-Grain1.png);
   background-size: cover;
   margin-inline: 7rem;
-  background-attachment:fixed;
+  background-attachment: fixed;
   overscroll-behavior: none;
 }
+
+/* Header Content */
+
 header {
   display: grid;
   grid-template-columns: 64px 16rem auto;
@@ -94,6 +94,7 @@ nav a:hover {
 }
 #rubbish-everywhere-paragraph p {
   margin-top: 0;
+  font-size: large;
 }
 #rubbish-everywhere-img {
   grid-area: 1 / 2 / 3 / 3;
@@ -111,6 +112,9 @@ nav a:hover {
 }
 #cause-and-responsible h2 {
   font-family: "Garet-Bold";
+}
+#cause-and-responsible p {
+  font-size: large;
 }
 
 [aria-labelledby="about-barry-curtis"] {
@@ -137,6 +141,7 @@ nav a:hover {
 }
 #about-barry-curtis-paragraph p {
   margin: 0;
+  font-size: large;
 }
 #about-barry-curtis-img2-header {
   grid-area: 3 / 2 / 4 / 3;

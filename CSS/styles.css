@@ -1,6 +1,6 @@
 * {
   box-sizing: content-box;
-  font-family: Garet-Book;
+  font-family: "Garet-Book";
   color: white;
 }
 @font-face {
@@ -11,17 +11,16 @@
   font-family: Garet-Bold;
   src: url(/Fonts/Garet-Heavy.ttf);
 }
-
-/* Header Content */
-
 body {
   background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
     url(/Images/Original/Linear1-Grain1.png);
   background-size: cover;
   margin-inline: 7rem;
-  background-attachment:fixed;
+  background-attachment: fixed;
   overscroll-behavior: none;
 }
+
+/* Header Styling */
 
 header {
   display: grid;
@@ -71,7 +70,8 @@ nav a:hover {
   font-family: "Garet-Bold";
 }
 
-/* Body Content*/
+/* Main Styling */
+
 [aria-labelledby="problem"] {
   display: grid;
   grid-template-columns: 1fr;
@@ -163,6 +163,7 @@ nav a:hover {
 }
 #solution-paragraph p {
   margin-top: 0;
+  font-size: large;
 }
 #solution-image img {
   display: block;
