@@ -1,3 +1,5 @@
+/* Page Styling */
+
 * {
   box-sizing: content-box;
   font-family: "Garet-Book";
@@ -163,6 +165,8 @@ h4 {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
 }
+
+/* Footer Styling */
 
 footer {
   display: flex;
