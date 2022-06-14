@@ -19,6 +19,7 @@ body {
     url(/Images/Original/Linear1-Grain1.png);
   background-size: cover;
   margin-inline: 7rem;
+  background-attachment:fixed;
 }
 header {
   display: grid;
