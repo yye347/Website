@@ -19,6 +19,7 @@ body {
   background-size: cover;
   margin-inline: 7rem;
   background-attachment:fixed;
+  overscroll-behavior: none;
 }
 
 header {
