@@ -3,7 +3,6 @@
   font-family: Garet-Book;
   color: white;
 }
-
 @font-face {
   font-family: Garet-Book;
   src: url(/Fonts/Garet-Book.ttf);
@@ -12,6 +11,8 @@
   font-family: Garet-Bold;
   src: url(/Fonts/Garet-Heavy.ttf);
 }
+
+/* Header Content */
 
 body {
   background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
@@ -49,11 +50,12 @@ header {
 
 nav a {
   display: block;
-  color: white;
   font-size: 1.2rem;
   text-align: center;
   padding: 1rem 1rem;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
 }
 
 nav li:last-child a {
@@ -62,10 +64,11 @@ nav li:last-child a {
 
 nav a:hover {
   text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 #current a {
-  font-weight: bold;
+  font-family: "Garet-Bold";
 }
 
 /* Body Content*/
