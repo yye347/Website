@@ -200,6 +200,9 @@ footer {
 #social-icons a {
   margin: 1rem;
 }
+#validation-checkmark {
+  margin-left: 25rem;
+}
 
 #author {
   margin-left: auto;
