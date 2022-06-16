@@ -24,6 +24,10 @@ body {
   overscroll-behavior: none;
 }
 
+img {
+  border-radius: 4%;
+}
+
 /* Header Styling */
 
 header {
