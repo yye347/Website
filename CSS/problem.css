@@ -1,208 +1,175 @@
-*
-{
-	box-sizing:content-box;
-	font-family:"Garet-Book";
-	color:#fff
+/* Universal Styling */
+
+* {
+  box-sizing: content-box;
+  font-family: "Garet-Book";
+  color: #fff;
 }
 
-@font-face
-{
-	font-family:Garet-Book;
-	src:url(/Fonts/Garet-Book.ttf)
+@font-face {
+  font-family: Garet-Book;
+  src: url(/Fonts/Garet-Book.ttf);
+}
+@font-face {
+  font-family: Garet-Bold;
+  src: url(/Fonts/Garet-Heavy.ttf);
 }
 
-@font-face
-{
-	font-family:Garet-Bold;
-	src:url(/Fonts/Garet-Heavy.ttf)
+body {
+  background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
+    url(/Images/Original/Linear1-Grain1.png);
+  background-size: cover;
+  margin-inline: 7rem;
+  background-attachment: fixed;
+  overscroll-behavior: none;
 }
 
-body
-{
-	background-image:linear-gradient(rgba(0 0 0 / 30%),rgba(0 0 0 / 30%)),url(/Images/Original/Linear1-Grain1.png);
-	background-size:cover;
-	margin-inline:7rem;
-	background-attachment:fixed;
-	overscroll-behavior:none
+/* Header Styling */
+
+header {
+  display: grid;
+  grid-template-columns: 64px 16rem auto;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#logo-text {
+  line-height: 2rem;
+}
+#logo-text h1 {
+  font-family: "Garet-Bold";
+  font-size: 1.8rem;
 }
 
-header
-{
-	display:grid;
-	grid-template-columns:64px 16rem auto;
-	align-items:center;
-	margin-bottom:1rem
+#nav-list {
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+nav a {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+nav li:last-child a {
+  padding-right: 0;
 }
 
-#logo-text
-{
-	line-height:2rem
+/* Main Styling */
+
+#page-title {
+  display: flex;
+  justify-content: center;
+  margin-block: 3rem;
 }
 
-#logo-text h1
-{
-	font-family:"Garet-Bold";
-	font-size:1.8rem
+[aria-labelledby="rubbish-everywhere"] {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 1rem;
+  margin-bottom: 3rem;
+}
+#rubbish-everywhere-paragraph {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#rubbish-everywhere-paragraph p {
+  margin-top: 0;
+  font-size: large;
+}
+#rubbish-everywhere-img {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#nav-list
-{
-	display:flex;
-	gap:3rem;
-	margin:0;
-	padding:0;
-	list-style:none;
-	float:right
+#cause-and-responsible {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  grid-row-gap: 1rem;
+  margin-bottom: 3rem;
+}
+#cause-and-responsible p {
+  font-size: large;
 }
 
-nav a
-{
-	display:block;
-	font-size:1.2rem;
-	text-align:center;
-	padding:1rem;
-	color:inherit;
-	text-decoration:underline .15em rgba(255,255,255,0);
-	transition:text-decoration-color 300ms
+[aria-labelledby="about-barry-curtis"] {
+  display: grid;
+  grid-template-columns: 0.8fr 0.7fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 1rem;
+  margin-bottom: 5rem;
+}
+#about-barry-curtis-img1 {
+  grid-area: 2 / 1 / 5 / 2;
+}
+#about-barry-curtis-paragraph {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#about-barry-curtis-paragraph p {
+  margin: 0;
+  font-size: large;
+}
+#about-barry-curtis-img2-header {
+  grid-area: 3 / 2 / 4 / 3;
+}
+#about-barry-curtis-img2-header h3 {
+  margin: 0;
+  font-family: "Garet-Bold";
+}
+#about-barry-curtis-img2 {
+  grid-area: 4 / 2 / 5 / 3;
 }
 
-nav li:last-child a
-{
-	padding-right:0
+/* Footer Styling */
+
+footer {
+  display: flex;
+  align-items: center;
 }
 
-nav a:hover
-{
-	text-decoration:underline;
-	text-decoration-color:rgba(255,255,255,1)
+#social-icons a {
+  margin: 1rem;
 }
 
-#page-title
-{
-	display:flex;
-	justify-content:center;
-	margin-block:3rem
+#validation-checkmark {
+  margin-left: 25rem;
 }
 
-[aria-labelledby="rubbish-everywhere"]
-{
-	display:grid;
-	grid-template-columns:0.8fr 1fr;
-	grid-template-rows:0.2fr 1fr;
-	grid-column-gap:0;
-	grid-row-gap:1rem;
-	margin-bottom:3rem
+#author {
+  margin-left: auto;
+  align-items: center;
 }
 
-#rubbish-everywhere-paragraph
-{
-	grid-area:2 / 1 / 3 / 2
+/* Combination Styling for Optimisation */
+
+#current a,
+#page-title h1,
+#cause-and-responsible h2 {
+  font-family: "Garet-Bold";
 }
 
-#rubbish-everywhere-paragraph p
-{
-	margin-top:0;
-	font-size:large
+#rubbish-everywhere-header,
+#about-barry-curtis-header {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
-#rubbish-everywhere-img
-{
-	grid-area:1 / 2 / 3 / 3;
-	display:flex;
-	align-items:center;
-	justify-content:center
-}
-
-#cause-and-responsible
-{
-	display:grid;
-	grid-template-columns:repeat(2,1fr);
-	grid-column-gap:5rem;
-	grid-row-gap:1rem;
-	margin-bottom:3rem
-}
-
-#cause-and-responsible p
-{
-	font-size:large
-}
-
-[aria-labelledby="about-barry-curtis"]
-{
-	display:grid;
-	grid-template-columns:0.8fr 0.7fr;
-	grid-template-rows:0.2fr 1fr;
-	grid-column-gap:0;
-	grid-row-gap:1rem;
-	margin-bottom:5rem
-}
-
-#about-barry-curtis-img1
-{
-	grid-area:2 / 1 / 5 / 2
-}
-
-#about-barry-curtis-paragraph
-{
-	grid-area:2 / 2 / 3 / 3
-}
-
-#about-barry-curtis-paragraph p
-{
-	margin:0;
-	font-size:large
-}
-
-#about-barry-curtis-img2-header
-{
-	grid-area:3 / 2 / 4 / 3
-}
-
-#about-barry-curtis-img2-header h3
-{
-	margin:0;
-	font-family:"Garet-Bold"
-}
-
-#about-barry-curtis-img2
-{
-	grid-area:4 / 2 / 5 / 3
-}
-
-footer
-{
-	display:flex;
-	align-items:center
-}
-
-#social-icons a
-{
-	margin:1rem
-}
-
-#validation-checkmark
-{
-	margin-left:25rem
-}
-
-#author
-{
-	margin-left:auto;
-	align-items:center
-}
-
-#current a,#page-title h1,#cause-and-responsible h2
-{
-	font-family:"Garet-Bold"
-}
-
-#rubbish-everywhere-header,#about-barry-curtis-header
-{
-	grid-area:1 / 1 / 2 / 2
-}
-
-#rubbish-everywhere-header h2,#about-barry-curtis-header h2
-{
-	margin-bottom:0;
-	font-family:"Garet-Bold"
+#rubbish-everywhere-header h2,
+#about-barry-curtis-header h2 {
+  margin-bottom: 0;
+  font-family: "Garet-Bold";
 }

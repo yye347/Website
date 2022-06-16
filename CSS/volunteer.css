@@ -1,118 +1,112 @@
-*
-{
-	box-sizing:content-box;
-	font-family:"Garet-Book";
-	color:#fff
+/* Universal Styling */
+
+* {
+  box-sizing: content-box;
+  font-family: "Garet-Book";
+  color: #fff;
 }
 
-@font-face
-{
-	font-family:Garet-Book;
-	src:url(/Fonts/Garet-Book.ttf)
+@font-face {
+  font-family: Garet-Book;
+  src: url(/Fonts/Garet-Book.ttf);
 }
 
-@font-face
-{
-	font-family:Garet-Bold;
-	src:url(/Fonts/Garet-Heavy.ttf)
+@font-face {
+  font-family: Garet-Bold;
+  src: url(/Fonts/Garet-Heavy.ttf);
 }
 
-body
-{
-	background-image:linear-gradient(rgba(0 0 0 / 30%),rgba(0 0 0 / 30%)),url(/Images/Original/Linear1-Grain1.png);
-	background-size:cover;
-	margin-inline:7rem;
-	background-attachment:fixed;
-	overscroll-behavior:none
+body {
+  background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
+    url(/Images/Original/Linear1-Grain1.png);
+  background-size: cover;
+  margin-inline: 7rem;
+  background-attachment: fixed;
+  overscroll-behavior: none;
 }
 
-header
-{
-	display:grid;
-	grid-template-columns:64px 16rem auto;
-	align-items:center;
-	margin-bottom:1rem
+/* Header Styling */
+
+header {
+  display: grid;
+  grid-template-columns: 64px 16rem auto;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-#logo-text
-{
-	line-height:2rem
+#logo-text {
+  line-height: 2rem;
 }
 
-#logo-text h1
-{
-	font-family:"Garet-Bold";
-	font-size:1.8rem
+#logo-text h1 {
+  font-family: "Garet-Bold";
+  font-size: 1.8rem;
 }
 
-#nav-list
-{
-	display:flex;
-	gap:3rem;
-	margin:0;
-	padding:0;
-	list-style:none;
-	float:right
+#nav-list {
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
 }
 
-nav a
-{
-	display:block;
-	font-size:1.2rem;
-	text-align:center;
-	padding:1rem;
-	color:inherit;
-	text-decoration:underline .15em rgba(255,255,255,0);
-	transition:text-decoration-color 300ms
+nav a {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
 }
 
-nav li:last-child a
-{
-	padding-right:0
+nav li:last-child a {
+  padding-right: 0;
 }
 
-nav a:hover
-{
-	text-decoration:underline;
-	text-decoration-color:rgba(255,255,255,1)
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
 
-#page-title
-{
-	display:flex;
-	justify-content:center;
-	margin-block:3rem
+/* Main Styling */
+
+#page-title {
+  display: flex;
+  justify-content: center;
+  margin-block: 3rem;
 }
 
-#typeform
-{
-	height:35rem;
-	margin-bottom:5rem
+#typeform {
+  height: 35rem;
+  margin-bottom: 5rem;
 }
 
-footer
-{
-	display:flex;
-	align-items:center
+/* Footer Styling */
+
+footer {
+  display: flex;
+  align-items: center;
 }
 
-#social-icons a
-{
-	margin:1rem
+#social-icons a {
+  margin: 1rem;
 }
 
-#validation-checkmark
-{
-	margin-left:25rem
+#validation-checkmark {
+  margin-left: 25rem;
 }
 
-#author
-{
-	margin-left:auto;
-	align-items:center
+#author {
+  margin-left: auto;
+  align-items: center;
 }
 
-#current a,#page-title h1
-{
-	font-family:"Garet-Bold"
+/* Combination Styling for Optimisation */
+
+#current a,
+#page-title h1 {
+  font-family: "Garet-Bold";
 }
