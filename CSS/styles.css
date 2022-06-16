@@ -189,6 +189,9 @@ nav a:hover {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
 }
+#together-cta a:hover {
+  text-decoration: underline;
+}
 
 /* Footer Styling */
 
@@ -208,4 +211,3 @@ footer {
   margin-left: auto;
   align-items: center;
 }
-
