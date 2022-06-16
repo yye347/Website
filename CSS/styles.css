@@ -22,10 +22,17 @@ body {
   margin-inline: 7rem;
   background-attachment: fixed;
   overscroll-behavior: none;
+  min-width: 1100px;
 }
 
 img {
   border-radius: 4%;
+}
+
+@media (min-width: 1800px) {
+  body {
+    margin-inline: 40rem;
+  }
 }
 
 /* Header Styling */
@@ -68,6 +75,10 @@ nav a:hover {
   text-decoration-color: rgba(255, 255, 255, 1);
 }
 
+#current a {
+  font-family: "Garet-Bold";
+}
+
 nav li:last-child a {
   padding-right: 0;
 }
@@ -81,6 +92,27 @@ nav li:last-child a {
   grid-column-gap: 40px;
   grid-row-gap: 1rem;
   margin-bottom: 3rem;
+}
+#problem-header {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#problem-header h2 {
+  margin-bottom: 0;
+  font-family: "Garet-Bold";
+}
+
+#problem-paragraph {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#problem-paragraph p {
+  margin-top: 0;
+  font-size: large;
+}
+
+#problem-image {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  align-items: flex-end;
 }
 
 [aria-labelledby="worsening"] {
@@ -123,6 +155,29 @@ nav li:last-child a {
   grid-row-gap: 1rem;
   margin-bottom: 3rem;
 }
+
+#solution-header {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#solution-header h2 {
+  margin-bottom: 0;
+  font-family: "Garet-Bold";
+}
+
+#solution-paragraph {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#solution-paragraph p {
+  margin-top: 0;
+  font-size: large;
+}
+#solution-image {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  align-items: flex-end;
+}
+
 #solution-image img {
   display: block;
   margin-left: auto;
@@ -141,6 +196,11 @@ nav li:last-child a {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
 }
+
+#together-header h2 {
+  font-family: "Garet-Bold";
+}
+
 #together-cta a:hover {
   text-decoration: underline;
 }
@@ -157,46 +217,5 @@ footer {
 }
 
 #validation-checkmark {
-  margin-left: 25rem;
-}
-
-#author {
-  margin-left: auto;
-  align-items: center;
-}
-
-/* Combination Styling for Optimisation */
-
-#current a,
-#together-header h2 {
-  font-family: "Garet-Bold";
-}
-
-#problem-header,
-#solution-header {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-#problem-paragraph,
-#solution-paragraph {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-#problem-image,
-#solution-image {
-  grid-area: 1 / 2 / 3 / 3;
-  display: flex;
-  align-items: flex-end;
-}
-
-#problem-paragraph p,
-#solution-paragraph p {
-  margin-top: 0;
-  font-size: large;
-}
-
-#problem-header h2,
-#solution-header h2 {
-  margin-bottom: 0;
-  font-family: "Garet-Bold";
+  flex-grow: 1;
 }

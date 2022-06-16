@@ -23,10 +23,17 @@ body {
   margin-inline: 7rem;
   background-attachment: fixed;
   overscroll-behavior: none;
+  overflow-y: scroll;
 }
 
 img {
   border-radius: 4%;
+}
+
+@media (min-width: 1800px) {
+  body {
+    margin-inline: 40rem;
+  }
 }
 
 /* Header Styling */
@@ -70,6 +77,10 @@ nav li:last-child a {
   padding-right: 0;
 }
 
+#current a {
+  font-family: "Garet-Bold";
+}
+
 nav a:hover {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 1);
@@ -81,6 +92,10 @@ nav a:hover {
   display: flex;
   justify-content: center;
   margin-block: 3rem;
+}
+
+#page-title h1 {
+  font-family: "Garet-Bold";
 }
 
 #typeform {
@@ -100,17 +115,5 @@ footer {
 }
 
 #validation-checkmark {
-  margin-left: 25rem;
-}
-
-#author {
-  margin-left: auto;
-  align-items: center;
-}
-
-/* Combination Styling for Optimisation */
-
-#current a,
-#page-title h1 {
-  font-family: "Garet-Bold";
+  flex-grow: 1;
 }
