@@ -24,6 +24,7 @@ body {
   background-attachment: fixed;
   overscroll-behavior: none;
   overflow-y: scroll;
+  min-width: 1100px;
 }
 
 img {
