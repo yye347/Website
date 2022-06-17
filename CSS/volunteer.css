@@ -24,7 +24,7 @@ body {
   background-attachment: fixed;
   overscroll-behavior: none;
   overflow-y: scroll;
-  min-width: 1100px;
+  min-width: fit-content;
 }
 
 img {
@@ -117,4 +117,43 @@ footer {
 
 #validation-checkmark {
   flex-grow: 1;
+}
+
+/* Media Queries */
+
+@media (min-width: 1800px) {
+  body {
+    margin-inline: 28rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  body {
+    margin-inline: 40rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    margin-inline: 0;
+  }
+
+  #nav-list {
+    gap: 1rem;
+  }
+
+  nav a {
+    padding-inline: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header,
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }

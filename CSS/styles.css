@@ -22,17 +22,11 @@ body {
   margin-inline: 7rem;
   background-attachment: fixed;
   overscroll-behavior: none;
-  min-width: 1100px;
+  min-width: fit-content;
 }
 
 img {
   border-radius: 4%;
-}
-
-@media only screen and (min-width: 1800px) {
-  body {
-    margin-inline: 40rem;
-  }
 }
 
 /* Header Styling */
@@ -218,4 +212,78 @@ footer {
 
 #validation-checkmark {
   flex-grow: 1;
+}
+
+/* Media Queries */
+
+@media (min-width: 1800px) {
+  body {
+    margin-inline: 28rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  body {
+    margin-inline: 40rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    margin-inline: 0;
+  }
+
+  #nav-list {
+    gap: 1rem;
+  }
+
+  nav a {
+    padding-inline: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #problem-image {
+    justify-content: center;
+  }
+
+  [aria-labelledby="worsening"] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto) 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 1rem;
+  }
+
+  #worsening-paragraph {
+    padding: 0;
+  }
+
+  #solution-image img {
+    margin: 0;
+  }
+
+  header,
+  [aria-labelledby="problem"],
+  [aria-labelledby="solution"],
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #problem-header,
+  [aria-labelledby="worsening"] div,
+  [aria-labelledby="solution"] div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #problem-paragraph,
+  #worsening-paragraph p,
+  #solution-paragraph {
+    text-align: center;
+  }
 }
