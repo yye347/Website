@@ -4,6 +4,7 @@
   box-sizing: content-box;
   font-family: "Garet-Book";
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 @font-face {
