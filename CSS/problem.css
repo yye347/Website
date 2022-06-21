@@ -65,7 +65,7 @@ nav a {
   text-align: center;
   padding: 1rem;
   color: inherit;
-  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  text-decoration: underline rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
 }
 nav a:hover {
@@ -178,6 +178,7 @@ nav li:last-child a {
 footer {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 #social-icons a {

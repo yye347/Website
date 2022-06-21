@@ -61,7 +61,7 @@ nav a {
   text-align: center;
   padding: 1rem;
   color: inherit;
-  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  text-decoration: underline rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
 }
 nav a:hover {
@@ -185,10 +185,11 @@ nav li:last-child a {
 }
 #together-cta a {
   font-size: 1.5rem;
-  text-decoration: none;
   background-color: #000;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
+  text-decoration: underline rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
 }
 
 #together-header h2 {
@@ -197,6 +198,7 @@ nav li:last-child a {
 
 #together-cta a:hover {
   text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 /* Footer Styling */
@@ -204,6 +206,7 @@ nav li:last-child a {
 footer {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 #social-icons a {
