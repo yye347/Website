@@ -29,11 +29,6 @@ img {
   border-radius: 4%;
 }
 
-@media (min-width: 1800px) {
-  body {
-    margin-inline: 40rem;
-  }
-}
 
 /* Header Styling */
 
@@ -73,11 +68,8 @@ nav a {
 }
 
 #current a {
-  font-family: "Garet-Bold";
-}
-
-nav li:last-child a {
-  padding-right: 0;
+  background-color: black;
+  border-radius: 1rem;
 }
 
 nav a:hover {
@@ -237,26 +229,26 @@ footer {
   body {
     margin-inline: 0;
   }
-
+  
   #nav-list {
     gap: 1rem;
   }
-
+  
   nav a {
     padding-inline: 0;
   }
-
+  
   img {
     max-width: 100%;
     height: auto;
   }
-
+  
   [aria-labelledby="youre-the-solution"] {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   header,
   section#steps,
   footer {

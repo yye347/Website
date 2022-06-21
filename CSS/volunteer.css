@@ -31,12 +31,6 @@ img {
   border-radius: 4%;
 }
 
-@media (min-width: 1800px) {
-  body {
-    margin-inline: 40rem;
-  }
-}
-
 /* Header Styling */
 
 header {
@@ -74,12 +68,9 @@ nav a {
   transition: text-decoration-color 300ms;
 }
 
-nav li:last-child a {
-  padding-right: 0;
-}
-
 #current a {
-  font-family: "Garet-Bold";
+  background-color: black;
+  border-radius: 1rem;
 }
 
 nav a:hover {
