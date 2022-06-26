@@ -229,12 +229,19 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  #logo-text h1 {
+    text-align: center;
+  }
   body {
     margin-inline: 0;
+    padding-inline: 1.5rem;
+    text-align: center;
   }
 
   #nav-list {
     gap: 1rem;
+    align-items: center;
+    line-height: 1.25rem;
   }
 
   nav a {
@@ -252,10 +259,23 @@ footer {
 
   [aria-labelledby="worsening"] {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto) 1fr;
-    grid-column-gap: 0;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
     grid-row-gap: 1rem;
+  }
+
+  #worsening-header {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  #worsening-paragraph {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  #worsening-image1 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  #worsening-image2 {
+    grid-area: 3 / 2 / 4 / 3;
   }
 
   #worsening-paragraph {
@@ -279,11 +299,5 @@ footer {
   [aria-labelledby="solution"] div {
     display: flex;
     justify-content: center;
-  }
-
-  #problem-paragraph,
-  #worsening-paragraph p,
-  #solution-paragraph {
-    text-align: center;
   }
 }

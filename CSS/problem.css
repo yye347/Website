@@ -197,10 +197,14 @@ footer {
 @media (max-width: 1100px) {
   body {
     margin-inline: 0;
+    padding-inline: 1.5rem;
+    text-align: center;
   }
 
   #nav-list {
     gap: 1rem;
+    align-items: center;
+    line-height: 1.25rem;
   }
 
   nav a {
