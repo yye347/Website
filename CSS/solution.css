@@ -245,6 +245,40 @@ footer {
     border-radius: 1rem;
   }
 
+  #nav-list li:last-child a {
+    border: none;
+  }
+  li:last-child {
+    display: flex;
+    background-color: lightslategray;
+    border: solid 1px black;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nav-list li:first-child a {
+    border: none;
+  }
+
+  li:first-child {
+    display: flex;
+    background-color: lightslategray;
+    border: solid 1px black;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #current {
+    display: flex;
+    background-color: black;
+    border: solid 1px lightslategray;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   #current a {
     background-color: black;
     border: solid 1px lightslategray;
