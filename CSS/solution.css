@@ -230,11 +230,24 @@ footer {
     padding-inline: 1.5rem;
     text-align: center;
   }
-
   #nav-list {
-    gap: 1rem;
-    align-items: center;
-    line-height: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
+  }
+  #nav-list a {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    background-color: lightslategray;
+    border: solid 1px black;
+    border-radius: 1rem;
+  }
+
+  #current a {
+    background-color: black;
+    border: solid 1px lightslategray;
   }
 
   nav a {
