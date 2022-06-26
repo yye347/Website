@@ -19,7 +19,7 @@
 
 body {
   background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
-    url(/Images/Original/Linear1-Grain1.png);
+    url(/Images/Linear1-Grain1.png);
   background-size: cover;
   margin-inline: 7rem;
   background-attachment: fixed;
