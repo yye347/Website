@@ -8,13 +8,13 @@
 }
 
 @font-face {
-  font-family: Garet-Book;
+  font-family: "Garet-Book";
   src: url(/Fonts/Garet-Book.ttf);
   font-display: swap;
 }
 
 @font-face {
-  font-family: Garet-Bold;
+  font-family: "Garet-Bold";
   src: url(/Fonts/Garet-Heavy.ttf);
   font-display: swap;
 }
