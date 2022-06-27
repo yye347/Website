@@ -8,18 +8,18 @@
 
 @font-face {
   font-family: "Garet-Book";
-  src: url(/Fonts/Garet-Book.ttf);
+  src: url(../Fonts/Garet-Book.ttf);
   font-display: swap;
 }
 @font-face {
   font-family: "Garet-Bold";
-  src: url(/Fonts/Garet-Heavy.ttf);
+  src: url(../Fonts/Garet-Heavy.ttf);
   font-display: swap;
 }
 
 body {
   background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
-    url(/Images/Linear1-Grain1.png);
+    url(../Images/Linear1-Grain1.png);
   background-size: cover;
   margin-inline: 7rem;
   background-attachment: fixed;
