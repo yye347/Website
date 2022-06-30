@@ -1,252 +1,260 @@
-/* Universal Styling */
+  /* Universal Styling */
 
-* {
-  box-sizing: content-box;
-  font-family: "Garet-Book";
-  color: #fff;
-}
-
-@font-face {
-  font-family: "Garet-Book";
-  src: url(../Fonts/Garet-Book.ttf);
-  font-display: swap;
-}
-@font-face {
-  font-family: Garet-Bold;
-  src: url(../Fonts/Garet-Heavy.ttf);
-  font-display: swap;
-}
-
-body {
-  background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
-    url(../Images/Linear1-Grain1.png);
-  background-size: cover;
-  margin-inline: 7rem;
-  background-attachment: fixed;
-  overscroll-behavior: none;
-  min-width: fit-content;
-}
-
-img {
-  border-radius: 4%;
-}
-
-/* Header Styling */
-
-header {
-  display: grid;
-  grid-template-columns: 64px 16rem auto;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-#logo-text {
-  line-height: 2rem;
-}
-#logo-text h1 {
-  font-family: "Garet-Bold";
-  font-size: 1.8rem;
-}
-
-#nav-list {
-  display: flex;
-  gap: 3rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  float: right;
-}
-nav a {
-  display: block;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem;
-  color: inherit;
-  text-decoration: underline rgba(255, 255, 255, 0);
-  transition: text-decoration-color 300ms;
-}
-nav a:hover {
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 1);
-}
-
-#current a {
-  background-color: black;
-  border-radius: 1rem;
-}
-
-/* Main Styling */
-
-#page-title {
-  display: flex;
-  justify-content: center;
-  margin-block: 3rem;
-}
-
-#page-title h1 {
-  font-family: "Garet-Bold";
-}
-
-[aria-labelledby="rubbish-everywhere"] {
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
-  grid-column-gap: 0;
-  grid-row-gap: 1rem;
-  margin-bottom: 3rem;
-}
-#rubbish-everywhere-header {
-  grid-area: 1 / 1 / 2 / 2;
-}
-#rubbish-everywhere-header h2 {
-  margin-bottom: 0;
-  font-family: "Garet-Bold";
-}
-#rubbish-everywhere-paragraph {
-  grid-area: 2 / 1 / 3 / 2;
-}
-#rubbish-everywhere-paragraph p {
-  margin-top: 0;
-  font-size: large;
-}
-#rubbish-everywhere-img {
-  grid-area: 1 / 2 / 3 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#cause-and-responsible {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
-  grid-row-gap: 1rem;
-  margin-bottom: 3rem;
-}
-#cause-and-responsible h2 {
-  font-family: "Garet-Bold";
-}
-#cause-and-responsible p {
-  font-size: large;
-}
-
-[aria-labelledby="about-barry-curtis"] {
-  display: grid;
-  grid-template-columns: 0.8fr 0.7fr;
-  grid-template-rows: 0.2fr 1fr;
-  grid-column-gap: 0;
-  grid-row-gap: 1rem;
-  margin-bottom: 5rem;
-}
-
-#about-barry-curtis-header {
-  grid-area: 1 / 1 / 2 / 2;
-}
-#about-barry-curtis-header h2 {
-  margin-bottom: 0;
-  font-family: "Garet-Bold";
-}
-#about-barry-curtis-img1 {
-  grid-area: 2 / 1 / 5 / 2;
-}
-#about-barry-curtis-paragraph {
-  grid-area: 2 / 2 / 3 / 3;
-}
-#about-barry-curtis-paragraph p {
-  margin: 0;
-  font-size: large;
-}
-#about-barry-curtis-img2-header {
-  grid-area: 3 / 2 / 4 / 3;
-}
-#about-barry-curtis-img2-header h3 {
-  margin: 0;
-  font-family: "Garet-Bold";
-}
-#about-barry-curtis-img2 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-
-/* Footer Styling */
-
-footer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-#social-icons a {
-  margin: 1rem;
-}
-
-#validation-checkmark {
-  flex-grow: 1;
-}
-
-/* Media Queries */
-
-@media (min-width: 1800px) {
-  body {
-    margin-inline: 28rem;
+  * {
+    box-sizing: content-box;
+    font-family: "Garet-Book";
+    color: #fff;
   }
-}
 
-@media (min-width: 2200px) {
-  body {
-    margin-inline: 40rem;
+  @font-face {
+    font-family: "Garet-Book";
+    src: url(../Fonts/Garet-Book.ttf);
+    font-display: swap;
   }
-}
+  @font-face {
+    font-family: Garet-Bold;
+    src: url(../Fonts/Garet-Heavy.ttf);
+    font-display: swap;
+  }
 
-@media (max-width: 1100px) {
   body {
-    margin-inline: 0;
-    padding-inline: 1.5rem;
-    text-align: center;
+    background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
+      url(../Images/Linear1-Grain1.webp);
+    background-size: cover;
+    margin-inline: 7rem;
+    background-attachment: fixed;
   }
-  #nav-list {
+
+  img {
+    border-radius: 4%;
+  }
+
+  /* Header Styling */
+
+  header {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-column-gap: 0.1rem;
-    grid-row-gap: 0.1rem;
+    grid-template-columns: 64px 16rem auto;
+    align-items: center;
+    margin-bottom: 1rem;
   }
-  #nav-list a {
-    padding-block: 0.5rem;
-    padding-inline: 0.5rem;
-    background-color: lightslategray;
-    border: solid 1px black;
-    border-radius: 1rem;
+  #logo-text {
+    line-height: 2rem;
+  }
+  #logo-text h1 {
+    font-family: "Garet-Bold";
+    font-size: 1.8rem;
+  }
+
+  #nav-list {
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
+  nav a {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    color: inherit;
+    text-decoration: underline rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 1);
   }
 
   #current a {
     background-color: black;
     border-radius: 1rem;
-    border: solid 1px lightslategray;
   }
 
-  nav a {
-    padding-inline: 0;
+  /* Main Styling */
+
+  #page-title {
+    display: flex;
+    justify-content: center;
+    margin-block: 3rem;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  #page-title h1 {
+    font-family: "Garet-Bold";
   }
 
   [aria-labelledby="rubbish-everywhere"] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 1rem;
+    margin-bottom: 3rem;
   }
-
+  #rubbish-everywhere-header {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #rubbish-everywhere-header h2 {
+    margin-bottom: 0;
+    font-family: "Garet-Bold";
+  }
   #rubbish-everywhere-paragraph {
-    text-align: center;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #rubbish-everywhere-paragraph p {
+    margin-top: 0;
+    font-size: large;
+  }
+  #rubbish-everywhere-img {
+    grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
-  header,
-  #cause-and-responsible,
-  [aria-labelledby="about-barry-curtis"],
+  #cause-and-responsible {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  #cause-and-responsible h2 {
+    font-family: "Garet-Bold";
+  }
+  #cause-and-responsible p {
+    font-size: large;
+  }
+
+  figure p,
+  figure blockquote {
+    margin: 0.3rem auto;
+  }
+
+  figure ul {
+    border-left: solid 0.25rem white;
+  }
+
+  [aria-labelledby="about-barry-curtis"] {
+    display: grid;
+    grid-template-columns: 0.8fr 0.7fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  #about-barry-curtis-header {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #about-barry-curtis-header h2 {
+    margin-bottom: 0;
+    font-family: "Garet-Bold";
+  }
+  #about-barry-curtis-img1 {
+    grid-area: 2 / 1 / 5 / 2;
+  }
+  #about-barry-curtis-paragraph {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  #about-barry-curtis-paragraph p {
+    margin: 0;
+    font-size: large;
+  }
+  #about-barry-curtis-img2-header {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  #about-barry-curtis-img2-header h3 {
+    margin: 0;
+    font-family: "Garet-Bold";
+  }
+  #about-barry-curtis-img2 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  /* Footer Styling */
+
   footer {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
-}
+
+  #social-icons a {
+    margin: 1rem;
+  }
+
+  #validation-checkmark {
+    flex-grow: 1;
+  }
+
+  /* Media Queries */
+
+  @media (min-width: 1800px) {
+    body {
+      margin-inline: 28rem;
+    }
+  }
+
+  @media (min-width: 2200px) {
+    body {
+      margin-inline: 40rem;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    body {
+      margin-inline: 0;
+      padding-inline: 1.5rem;
+      text-align: center;
+    }
+    #nav-list {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-column-gap: 0.1rem;
+      grid-row-gap: 0.1rem;
+    }
+    #nav-list a {
+      padding-block: 0.5rem;
+      padding-inline: 0.5rem;
+      background-color: lightslategray;
+      border: solid 1px black;
+      border-radius: 1rem;
+    }
+
+    #current a {
+      background-color: black;
+      border-radius: 1rem;
+      border: solid 1px lightslategray;
+    }
+
+    nav a {
+      padding-inline: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [aria-labelledby="rubbish-everywhere"] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #rubbish-everywhere-paragraph {
+      text-align: center;
+    }
+
+    header,
+    #cause-and-responsible,
+    [aria-labelledby="about-barry-curtis"],
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
