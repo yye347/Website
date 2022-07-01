@@ -244,7 +244,7 @@ footer {
   #nav-list a {
     padding-block: 0.5rem;
     padding-inline: 0.5rem;
-    background-color: lightslategray;
+    background-color: darkslategray;
     border: solid 1px black;
     border-radius: 1rem;
   }
@@ -252,9 +252,8 @@ footer {
   #current a {
     background-color: black;
     border-radius: 1rem;
-    border: solid 1px lightslategray;
+    border: solid 1px darkslategray;
   }
-
   nav a {
     padding-inline: 0;
   }
