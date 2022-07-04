@@ -232,7 +232,7 @@ footer {
 @media (max-width: 1100px) {
   body {
     margin-inline: 1.5rem;
-    text-align: center;
+    text-align: start;
   }
   #nav-list {
     display: grid;
@@ -292,7 +292,7 @@ footer {
     padding: 0;
   }
   #worsening-paragraph p {
-    text-align: center;
+    text-align: start;
   }
 
   #solution-image img {
