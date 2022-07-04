@@ -26,6 +26,7 @@ body {
   margin-inline: 7rem;
   background-attachment: fixed;
   overflow-y: scroll;
+  text-shadow: 1px 1px 2px black;
 }
 
 img {
@@ -57,6 +58,7 @@ header {
   padding: 0;
   list-style: none;
   float: right;
+  text-shadow: none;
 }
 
 nav a {
@@ -131,7 +133,11 @@ footer {
     margin-inline: 0;
     padding-inline: 1.5rem;
     text-align: start;
-    background-attachment: auto;
+    background-attachment: scroll;
+    background-image: linear-gradient(rgba(0 0 0 / 30%), rgba(0 0 0 / 30%)),
+      url(../Images/MobileBackground.webp);
+      background-size: auto;
+      background-attachment: unset;
   }
   #nav-list {
     display: grid;
