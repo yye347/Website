@@ -25,7 +25,6 @@ body {
   background-size: cover;
   margin-inline: 7rem;
   background-attachment: fixed;
-  min-width: fit-content;
   overflow-y: scroll;
 }
 
@@ -132,6 +131,7 @@ footer {
     margin-inline: 0;
     padding-inline: 1.5rem;
     text-align: start;
+    background-attachment: auto;
   }
   #nav-list {
     display: grid;

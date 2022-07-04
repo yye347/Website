@@ -23,7 +23,6 @@ body {
   background-size: cover;
   margin-inline: 7rem;
   background-attachment: fixed;
-  min-width: fit-content;
 }
 
 img {
@@ -233,6 +232,7 @@ footer {
   body {
     margin-inline: 1.5rem;
     text-align: start;
+    background-attachment: auto;
   }
   #nav-list {
     display: grid;

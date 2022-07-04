@@ -208,6 +208,7 @@
       margin-inline: 0;
       padding-inline: 1.5rem;
       text-align: start;
+      background-attachment: auto;
     }
     #nav-list {
       display: grid;
